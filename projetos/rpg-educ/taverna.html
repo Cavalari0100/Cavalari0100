@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RPG Educacional</title>
+    <link rel="stylesheet" href="css/taverna.css">
+</head>
+
+<body>
+
+    <button class="btn-toggle" onclick="toggleMenu()">☰</button>
+    <button class="btn-home">
+        <a href="index.html"><img src="icons/home.svg" alt="Home"></a>
+    </button>
+    <i class="bi bi-house-door-fill"></i>
+    <div class="container" id="container">
+
+        <!-- Menu lateral -->
+        <aside class="perfil" id="perfil">
+            <img src="img/personagem.png" alt="Personagem" class="avatar">
+
+            <h2 class="nome">Aprendiz</h2>
+
+            <p>Nível: <span>1</span></p>
+            <p>XP: <span>120</span> / 300</p>
+
+            <div class="barra-xp">
+                <div class="progresso-xp" style="width: 40%;"></div>
+            </div>
+        </aside>
+
+        <!-- Área da taverna -->
+        <main class="jogo taverna-dia" id="area-mapa">
+
+            <button class="btn-clima" onclick="trocarClima()">Mudar Horário</button>
+
+            <!-- Balão NPC direita -->
+            <a href="missoes.html" class="balao balao-direita">
+                Missões do Guerreiro
+            </a>
+            <a href="mapa.html" class="balao balao-esquerda">
+                Mapa
+            </a>
+        </main>
+
+    </div>
+
+    <script>
+
+        function toggleMenu() {
+            document.getElementById("container").classList.toggle("menu-fechado");
+        }
+
+        function trocarClima() {
+            const mapa = document.getElementById("area-mapa");
+
+            // Verifica se está dia, se sim, muda para noite. Se não, volta para dia.
+            if (mapa.classList.contains("taverna-noite")) {
+                mapa.classList.remove("taverna-noite");
+                mapa.classList.add("taverna-dia");
+            } else {
+                mapa.classList.remove("taverna-dia");
+                mapa.classList.add("taverna-noite");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RPG Educacional - Caça-Palavras</title>
+    <link rel="stylesheet" href="css/cacaPalavra.css">
+</head>
+
+<body>
+
+    <button class="btn-home">
+        <a href="missoes.html">⬅ Voltar</a>
+    </button>
+
+    <div class="container">
+
+        <h1>🧠 Caça-Palavras</h1>
+        <p>Encontre os componentes de um computador!</p>
+
+        <!-- Caça-palavras -->
+        <div class="grid" id="grid">
+            <!-- Gerado via JS -->
+        </div>
+
+        <!-- Lista de palavras -->
+        <div class="palavras">
+            <h3>Palavras para encontrar</h3>
+            <ul id="lista-palavras"></ul>
+        </div>
+
+        <!-- Input -->
+        <div class="entrada">
+            <input type="text" id="entradaPalavra" placeholder="Digite a palavra encontrada">
+            <button onclick="verificarPalavra()">Confirmar</button>
+        </div>
+
+        <p id="mensagem"></p>
+
+    </div>
+
+    <script>
+        const palavras = [
+            "CPU",
+            "RAM",
+            "HD",
+            "SSD",
+            "PLACA",
+            "TECLADO",
+            "MOUSE",
+            "MONITOR"
+        ];
+
+        const grid = [
+            ["C", "P", "U", "R", "A", "M", "O", "N"],
+            ["A", "S", "S", "D", "T", "E", "C", "L"],
+            ["H", "D", "M", "O", "U", "S", "E", "A"],
+            ["P", "L", "A", "C", "A", "R", "A", "M"],
+            ["T", "E", "C", "L", "A", "D", "O", "S"],
+            ["M", "O", "N", "I", "T", "O", "R", "D"],
+            ["R", "A", "M", "S", "S", "D", "H", "D"],
+            ["C", "P", "U", "P", "L", "A", "C", "A"]
+        ];
+
+        const encontradas = [];
+
+        function montarGrid() {
+            const gridDiv = document.getElementById("grid");
+            grid.forEach(linha => {
+                linha.forEach(letra => {
+                    const cell = document.createElement("div");
+                    cell.className = "cell";
+                    cell.textContent = letra;
+                    gridDiv.appendChild(cell);
+                });
+            });
+        }
+
+        /*function listarPalavras() {
+            const ul = document.getElementById("lista-palavras");
+            palavras.forEach(p => {
+                const li = document.createElement("li");
+                li.id = `palavra-${p}`;
+                li.textContent = p;
+                ul.appendChild(li);
+            });
+        }*/
+
+        function verificarPalavra() {
+            const input = document.getElementById("entradaPalavra");
+            const palavra = input.value.toUpperCase().trim();
+            const msg = document.getElementById("mensagem");
+            const lista = document.getElementById("lista-palavras");
+
+            if (palavras.includes(palavra) && !encontradas.includes(palavra)) {
+                encontradas.push(palavra);
+
+                // cria a palavra somente quando encontrada 
+                const li = document.createElement("li");
+                li.textContent = palavra;
+                li.classList.add("ok");
+                lista.appendChild(li);
+
+                msg.textContent = `✅ Você encontrou: ${palavra}`;
+                msg.style.color = "#4caf50";
+
+            } else {
+                msg.textContent = "❌ Palavra inválida ou já encontrada";
+                msg.style.color = "#ff5252";
+            }
+
+            input.value = "";
+        }
+
+        montarGrid();
+    </script>
+
+</body>
+
+</html>

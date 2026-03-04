@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RPG Educacional - Missões</title>
+    <link rel="stylesheet" href="css/missoes.css">
+</head>
+
+<body>
+
+    <!-- Botão abrir/fechar menu -->
+    <button class="btn-toggle" onclick="toggleMenu()">☰</button>
+
+    <!-- Botão Home -->
+    <button class="btn-home">
+        <a href="index.html">
+            <img src="icons/home.svg" alt="Home">
+        </a>
+    </button>
+
+    <div class="container" id="container">
+
+        <!-- Menu lateral -->
+        <aside class="perfil" id="perfil">
+            <img src="img/personagem.png" alt="Personagem" class="avatar">
+
+            <h2 class="nome">Aprendiz</h2>
+
+            <p>Nível: <span>1</span></p>
+            <p>XP: <span>120</span> / 300</p>
+
+            <div class="barra-xp">
+                <div class="progresso-xp" style="width: 40%;"></div>
+            </div>
+        </aside>
+
+        <!-- Área principal das missões -->
+        <main class="jogo missoes" id="area-mapa">
+
+            <!-- Painel de missões -->
+            <section class="painel-missoes">
+                <h2 class="titulo-missoes">Quadro de Missões</h2>
+
+                <table class="tabela-missoes">
+                    <thead>
+                        <tr>
+                            <th>Missão</th>
+                            <th>Recompensa</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Conclua o caça Palavras</td>
+                            <td>+50 XP</td>
+                            <td>
+                                <button class="btn-acao aceitar"><a href="cacaPalavras.html">Aceitar</a></button>
+                                <button class="btn-acao info">Informações</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Explorar a Floresta</td>
+                            <td>+80 XP</td>
+                            <td>
+                                <button class="btn-acao aceitar">Aceitar</button>
+                                <button class="btn-acao info">Informações</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Entregar mensagem ao ferreiro</td>
+                            <td>+30 XP</td>
+                            <td>
+                                <button class="btn-acao aceitar">Aceitar</button>
+                                <button class="btn-acao info">Informações</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <a href="taverna.html" class="balao balao-esquerda">
+                Voltar
+            </a>
+        </main>
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("container").classList.toggle("menu-fechado");
+        }
+    </script>
+
+</body>
+
+</html>

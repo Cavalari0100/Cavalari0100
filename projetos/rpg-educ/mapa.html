@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RPG Educacional</title>
+    <link rel="stylesheet" href="css/mapa.css">
+</head>
+
+<body>
+
+    <button class="btn-toggle" onclick="toggleMenu()">☰</button>
+    <button class="btn-home">
+        <a href="index.html"><img src="icons/home.svg" alt="Home"></a>
+    </button>
+    <div id="mapa" class="day" style="background-image: url('assets/img/mapa-dia.png');">
+    </div>
+
+    <script src="assets/js/time.js"></script>
+
+
+    <div class="container" id="container">
+
+        <!-- Menu lateral -->
+        <aside class="perfil" id="perfil">
+            <img src="img/personagem.png" alt="Personagem" class="avatar">
+
+            <h2 class="nome">Aprendiz</h2>
+
+            <p>Nível: <span>1</span></p>
+            <p>XP: <span>120</span> / 300</p>
+
+            <div class="barra-xp">
+                <div class="progresso-xp" style="width: 40%;"></div>
+
+            </div>
+
+        </aside>
+
+        <main class="mapa fundo-dia" id="area-mapa">
+
+            <button class="btn-clima" onclick="trocarClima()">Mudar Horário</button>
+
+            <!-- Balão NPC centro (taverneiro) -->
+            <a href="taverna.html" class="balao balao-esquerda">
+                Taverna
+            </a>
+
+            <!-- Balão NPC direita -->
+            <a href="hallDaFama.html" class="balao balao-direita">
+                Museu
+            </a>
+
+            
+        </main>
+
+    </div>
+
+    <script>
+
+        function toggleMenu() {
+            document.getElementById("container").classList.toggle("menu-fechado");
+        }
+
+        function trocarClima() {
+            const mapa = document.getElementById("area-mapa");
+
+            // Verifica se está dia, se sim, muda para noite. Se não, volta para dia.
+            if (mapa.classList.contains("fundo-dia")) {
+                mapa.classList.remove("fundo-dia");
+                mapa.classList.add("fundo-noite");
+            } else {
+                mapa.classList.remove("fundo-noite");
+                mapa.classList.add("fundo-dia");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

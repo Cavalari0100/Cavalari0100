@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>RPG - Nova Página</title>
+    <link rel="stylesheet" href="css/firstyle.css">
+</head>
+<body>
+
+    <button class="btn-toggle" onclick="toggleMenu()">☰</button>
+
+    <div class="container" id="container">
+        <aside class="perfil">
+            <img src="img/personagem.png" class="avatar">
+            <h2 class="nome">Aprendiz</h2>
+            <p>Nível: 1</p>
+            <p>XP: <span>120</span> / 300</p>
+            <div class="barra-xp"><div class="progresso-xp" style="width: 40%;"></div></div>
+            <br>
+            <a href="index.html" class="init">Início</a>
+        </aside>
+
+        <main class="cenario" id="area-jogo" style="background-image: url('../img/mapa.png');">
+            
+            <button class="btn-clima" onclick="trocarImagem('img/mapa.png', 'img/mapaNoite.png')">
+                Clima
+            </button>
+
+            <a href="proxima.html" class="balao" style="top: 50%; left: 50%;">Explorar</a>
+
+        </main>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("container").classList.toggle("menu-fechado");
+        }
+
+        // Função universal para trocar imagens de fundo
+        function trocarImagem(dia, noite) {
+            const area = document.getElementById("area-jogo");
+            const fundoAtual = area.style.backgroundImage;
+
+            if (fundoAtual.includes(dia)) {
+                area.style.backgroundImage = `url('${noite}')`;
+            } else {
+                area.style.backgroundImage = `url('${dia}')`;
+            }
+        }
+    </script>
+</body>
+</html>
