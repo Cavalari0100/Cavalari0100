@@ -15,6 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 Minha Carreira
+<br>
 Minha trajetória na tecnologia começou muito cedo. Aos 8 anos de idade, eu já desmontava computadores antigos que meu pai trazia para casa para consertar. A curiosidade em entender como as máquinas funcionavam foi o ponto de partida para a minha paixão pela área.
 
 Aos 15 anos, iniciei minha experiência profissional trabalhando em uma loja de informática, realizando manutenção de computadores, instalação de redes e configuração de impressoras. Foi nesse período que desenvolvi minha base técnica e aprendi, na prática, a resolver problemas reais.
