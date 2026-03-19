@@ -1,35 +1,20 @@
-## Hi there 👋
+🚀 João Vitor Cavalari
 
-<!--
-**Cavalari0100/Cavalari0100** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+💻 Desenvolvedor em formação apaixonado por tecnologia
+📍 Brasil
+🎯 Foco em desenvolvimento web e boas práticas de código
 
-Here are some ideas to get you started:
+👨‍💻 Sobre mim
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-Minha Carreira
-<br>
-Minha trajetória na tecnologia começou muito cedo. Aos 8 anos de idade, eu já desmontava computadores antigos que meu pai trazia para casa para consertar. A curiosidade em entender como as máquinas funcionavam foi o ponto de partida para a minha paixão pela área.
+Desde cedo curioso com tecnologia, comecei explorando computadores e hoje estou focado em desenvolvimento web. Busco evoluir constantemente, criando projetos práticos e organizados.
 
-Aos 15 anos, iniciei minha experiência profissional trabalhando em uma loja de informática, realizando manutenção de computadores, instalação de redes e configuração de impressoras. Foi nesse período que desenvolvi minha base técnica e aprendi, na prática, a resolver problemas reais.
+🔭 Atualmente estudando: PHP, JavaScript e arquitetura MVC
 
-Aos 18 anos, decidi ingressar em uma faculdade de Química. No entanto, após três meses, percebi que aquele não era o meu caminho. Durante as aulas de Física, eu me pegava criando algoritmos para resolver os cálculos, o que deixou claro que minha verdadeira vocação estava na tecnologia.
+🌱 Aprendendo mais sobre boas práticas e organização de código
 
-Foi então que tomei a decisão de mudar de rumo e ingressei no curso de Ciência da Computação pela FEMA – Assis, onde pude direcionar minha energia e dedicação para aquilo que realmente me motivava.
+⚡ Interesse em sistemas web, back-end e projetos criativos
 
-Ao longo da minha formação e trajetória profissional, atuei no desenvolvimento de sistemas utilizando tecnologias como React, Node.js, JavaScript, HTML, CSS, MongoDB, MySQL, Power BI e WordPress.
-
-Realizei estágio na multinacional Neocare, além de experiências na Prefeitura de Paraguaçu Paulista, na FEMA e em uma empresa especializada no desenvolvimento de páginas para empresas. Também atuei em dois estágios no SESI CE380.
-
-Outro marco importante da minha trajetória foi minha atuação na Usina IBERIA, na área de tecnologia agrícola, onde utilizei Power BI e relatórios estratégicos para transformar dados do campo em informações relevantes para o ambiente corporativo, apoiando a tomada de decisões.
-
-Atualmente, atuo como Instrutor de Formação Profissional pelo SENAI, onde compartilho conhecimento, formo novos profissionais da área e contribuo para o desenvolvimento técnico de futuros talentos da tecnologia.
-
-Hoje sigo evoluindo como desenvolvedor e educador, sempre em busca de novos desafios e oportunidades para gerar impacto através da tecnologia.
+🛠️ Tecnologias
+<div style="display: inline_block"><br> <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> <img align="center" alt="JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"> <img align="center" alt="PHP" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"> </div>
+📊 Estatísticas
+<div> <a href="https://github.com/seu-usuario"> <img height="180em" src="https://github-readme-stats.vercel.app/api?username=seu-usuario&show_icons=true&theme=dark"/> <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=seu-usuario&layout=compact&theme=dark"/> </a> </div>
