@@ -87,3 +87,8 @@ a{
     color: white;
     text-decoration: none;
 }
+
+.image-fluid {
+    max-width: 100%;
+    max-height: auto;
+}
